@@ -17,7 +17,7 @@
 name       → Sarthak Bhandari
 based      → Nepal 🇳🇵
 profile    → tech enthusiast · vibe coder
-interests  → software · interfaces · emerging technology
+interests  → software · hardware · interfaces
 ```
 
 ### The toolkit
