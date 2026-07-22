@@ -3,7 +3,7 @@
 
   <br />
 
-  **Developer mindset. Engineer discipline. Relentless curiosity.**
+  *Every system is just a question that learned how to run.*
 
   <a href="mailto:sarthakbhandari172@gmail.com">Email</a> ·
   <a href="https://github.com/sarthakbhandari172-blip?tab=repositories">Projects</a>
@@ -11,12 +11,13 @@
 
 ---
 
-### Mission control
+### About me
 
 ```text
-directive → turn ideas into reliable software
-protocol  → learn · build · test · improve
-status    → online and exploring
+name     → Sarthak Bhandari
+country  → Nepal 🇳🇵
+into     → technology, creative coding, and new ideas
+style    → learn fast · build clean · keep evolving
 ```
 
 ### The toolkit

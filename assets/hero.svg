@@ -26,30 +26,30 @@
     </rect>
 
     <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace">
-      <text x="54" y="48" fill="#74f8ff" font-size="12" letter-spacing="3">SB // COMMAND DECK</text>
+      <text x="54" y="48" fill="#74f8ff" font-size="12" letter-spacing="3">SB // PROFILE INTERFACE</text>
       <circle cx="1125" cy="43" r="5" fill="#71ffc3" filter="url(#glow)"><animate attributeName="opacity" values="1;.35;1" dur="2s" repeatCount="indefinite"/></circle>
       <text x="1141" y="48" fill="#8bbbc6" font-size="11" text-anchor="end">SYSTEM ONLINE</text>
 
-      <text x="58" y="145" fill="#72f7ff" font-size="13" letter-spacing="5">DEVELOPER // SYSTEMS THINKER</text>
+      <text x="58" y="145" fill="#72f7ff" font-size="13" letter-spacing="5">TECH ENTHUSIAST // VIBE CODER</text>
       <text x="54" y="225" fill="#f0fbff" font-family="Arial, Helvetica, sans-serif" font-size="70" font-weight="800" letter-spacing="-2">SARTHAK</text>
-      <text x="58" y="270" fill="url(#cyan)" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" letter-spacing="1">BUILDING INTELLIGENT THINGS THAT WORK.</text>
+      <text x="58" y="270" fill="url(#cyan)" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" letter-spacing="1">EVERY SYSTEM BEGINS AS A QUESTION.</text>
       <path d="M58 296H562" stroke="url(#line)" stroke-width="2"/>
 
       <g transform="translate(58 326)">
         <path d="M0 0H500L514 14V128H0Z" fill="#020810" fill-opacity=".68" stroke="#5aeef8" stroke-opacity=".22"/>
         <path d="M0 0H130" stroke="#67f8ff" stroke-width="2"/>
-        <text x="18" y="29" fill="#588794" font-size="11" letter-spacing="2">ACTIVE DIRECTIVE</text>
-        <text x="18" y="58" fill="#d9fbff" font-size="15">learn(); build(); iterate();</text>
-        <text x="18" y="91" fill="#588794" font-size="11" letter-spacing="2">CURRENT MODE</text>
-        <text x="18" y="116" fill="#70f8ff" font-size="14">CRAFTING THE NEXT IDEA</text>
-        <rect x="236" y="104" width="9" height="15" fill="#70f8ff"><animate attributeName="opacity" values="1;0;1" dur=".9s" repeatCount="indefinite"/></rect>
-        <g transform="translate(330 24)">
-          <text y="0" fill="#588794" font-size="10">FOCUS</text><rect y="11" width="146" height="5" fill="#102c36"/><rect y="11" width="119" height="5" fill="#43eaf4"><animate attributeName="width" values="70;136;119;70" dur="6s" repeatCount="indefinite"/></rect>
-          <text y="39" fill="#588794" font-size="10">CURIOSITY</text><rect y="50" width="146" height="5" fill="#102c36"/><rect y="50" width="137" height="5" fill="#43eaf4"/>
-          <text y="78" fill="#588794" font-size="10">UPTIME</text><text x="146" y="78" fill="#d8fbff" font-size="11" text-anchor="end">∞</text>
-        </g>
+        <text x="18" y="27" fill="#588794" font-size="10" letter-spacing="2">IDENTITY</text>
+        <text x="18" y="53" fill="#d9fbff" font-size="16" font-weight="700">SARTHAK BHANDARI</text>
+        <text x="18" y="83" fill="#588794" font-size="10" letter-spacing="2">COUNTRY</text>
+        <text x="18" y="108" fill="#70f8ff" font-size="14">NEPAL</text>
+        <path d="M276 22V106" stroke="#5aeef8" stroke-opacity=".16"/>
+        <text x="304" y="27" fill="#588794" font-size="10" letter-spacing="2">PROFILE</text>
+        <rect x="304" y="41" width="174" height="27" rx="3" fill="#0b2e39" stroke="#54eef8" stroke-opacity=".38"/>
+        <text x="391" y="59" fill="#d9fbff" font-size="10" text-anchor="middle" letter-spacing="1">TECH ENTHUSIAST</text>
+        <rect x="304" y="78" width="174" height="27" rx="3" fill="#0b2e39" stroke="#54eef8" stroke-opacity=".38"/>
+        <text x="391" y="96" fill="#70f8ff" font-size="10" text-anchor="middle" letter-spacing="2">VIBE CODER</text>
       </g>
-      <text x="58" y="502" fill="#446f7b" font-size="10" letter-spacing="2">PROFILE CORE / 172-BLIP</text>
+      <text x="58" y="502" fill="#446f7b" font-size="10" letter-spacing="2">NEPAL // BUILDING IN PUBLIC</text>
     </g>
 
     <g transform="translate(890 282)">
@@ -75,7 +75,7 @@
       </circle>
       <circle r="17" fill="#fff"/>
       <g fill="#73f8ff" font-family="monospace" font-size="10" letter-spacing="2">
-        <text x="-205" y="-115">CORE 100%</text><text x="130" y="-115">SYNC</text><text x="142" y="126">STABLE</text>
+        <text x="-205" y="-115">CURIOSITY</text><text x="130" y="-115">CREATE</text><text x="142" y="126">EVOLVING</text>
       </g>
       <path d="M-202-101H-126M127-101H196M139 110H202" stroke="#66f5ff" stroke-opacity=".45"/>
     </g>
