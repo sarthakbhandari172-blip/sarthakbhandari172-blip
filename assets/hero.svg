@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="520" viewBox="0 0 1180 520" role="img" aria-labelledby="title desc">
+  <title id="title">Sarthak Bhandari — developer constellation</title>
+  <desc id="desc">An animated neon developer profile banner with orbiting code nodes and a compact terminal.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#050816"/><stop offset=".52" stop-color="#0a1027"/><stop offset="1" stop-color="#071a24"/>
+    </linearGradient>
+    <linearGradient id="neon" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#78f7d4"><animate attributeName="stop-color" values="#78f7d4;#8b7cff;#78f7d4" dur="7s" repeatCount="indefinite"/></stop>
+      <stop offset="1" stop-color="#8b7cff"><animate attributeName="stop-color" values="#8b7cff;#34d9ff;#8b7cff" dur="7s" repeatCount="indefinite"/></stop>
+    </linearGradient>
+    <radialGradient id="glow"><stop stop-color="#68f8d0" stop-opacity=".25"/><stop offset="1" stop-color="#68f8d0" stop-opacity="0"/></radialGradient>
+    <pattern id="grid" width="34" height="34" patternUnits="userSpaceOnUse"><path d="M34 0H0V34" fill="none" stroke="#a9c7ff" stroke-opacity=".055"/></pattern>
+    <filter id="blur"><feGaussianBlur stdDeviation="18"/></filter>
+    <filter id="soft"><feGaussianBlur stdDeviation="5"/></filter>
+    <clipPath id="panel"><rect x="18" y="18" width="1144" height="484" rx="30"/></clipPath>
+  </defs>
+
+  <rect x="18" y="18" width="1144" height="484" rx="30" fill="url(#bg)" stroke="#7ff5d8" stroke-opacity=".22"/>
+  <g clip-path="url(#panel)">
+    <rect x="18" y="18" width="1144" height="484" fill="url(#grid)"/>
+    <circle cx="250" cy="225" r="240" fill="url(#glow)" filter="url(#blur)">
+      <animate attributeName="cx" values="220;330;220" dur="12s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1030" cy="430" r="220" fill="#745cff" opacity=".08" filter="url(#blur)">
+      <animate attributeName="cy" values="430;330;430" dur="10s" repeatCount="indefinite"/>
+    </circle>
+    <path d="M-20 415 C260 315 360 530 660 414 S970 330 1210 430" fill="none" stroke="url(#neon)" stroke-width="2" opacity=".22">
+      <animate attributeName="d" values="M-20 415 C260 315 360 530 660 414 S970 330 1210 430;M-20 390 C230 505 430 310 690 420 S980 500 1210 390;M-20 415 C260 315 360 530 660 414 S970 330 1210 430" dur="11s" repeatCount="indefinite"/>
+    </path>
+
+    <g transform="translate(268 260)">
+      <circle r="127" fill="none" stroke="#7a91bb" stroke-opacity=".2" stroke-dasharray="3 10"/>
+      <circle r="88" fill="none" stroke="#68f8d0" stroke-opacity=".2"/>
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="18s" repeatCount="indefinite"/>
+        <circle cx="0" cy="-127" r="7" fill="#68f8d0"/><circle cx="0" cy="-127" r="18" fill="#68f8d0" opacity=".15" filter="url(#soft)"/>
+        <text x="-10" y="-145" fill="#bfffee" font-family="monospace" font-size="12">BUILD</text>
+      </g>
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="13s" repeatCount="indefinite"/>
+        <circle cx="88" cy="0" r="6" fill="#9a8cff"/><text x="98" y="4" fill="#c9c1ff" font-family="monospace" font-size="12">SHIP</text>
+      </g>
+      <path d="M-48 20 0-58 48 20 0 62Z" fill="#09182a" stroke="url(#neon)" stroke-width="2"/>
+      <path d="m-22 12 22-36 22 36L0 42Z" fill="none" stroke="#b8fff0" stroke-opacity=".65"/>
+      <circle r="8" fill="#fff"><animate attributeName="r" values="6;10;6" dur="2.4s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;.45;1" dur="2.4s" repeatCount="indefinite"/></circle>
+    </g>
+
+    <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace">
+      <text x="462" y="105" fill="#72f6d2" font-size="14" letter-spacing="3">HELLO, WORLD — I'M</text>
+      <text x="458" y="174" fill="#f5f8ff" font-family="Inter, Arial, sans-serif" font-weight="800" font-size="58" letter-spacing="-2">SARTHAK</text>
+      <text x="462" y="214" fill="url(#neon)" font-family="Inter, Arial, sans-serif" font-weight="700" font-size="25">Curiosity → code → momentum.</text>
+
+      <g transform="translate(462 258)">
+        <rect width="625" height="174" rx="16" fill="#040712" fill-opacity=".86" stroke="#91a4c9" stroke-opacity=".22"/>
+        <circle cx="21" cy="20" r="5" fill="#ff6b7a"/><circle cx="39" cy="20" r="5" fill="#ffd166"/><circle cx="57" cy="20" r="5" fill="#67e8a5"/>
+        <text x="82" y="25" fill="#70809f" font-size="12">sarthak@github: ~/next</text>
+        <path d="M18 41H607" stroke="#91a4c9" stroke-opacity=".13"/>
+        <text x="22" y="72" fill="#68f8d0" font-size="14">$</text><text x="42" y="72" fill="#e8efff" font-size="14">whoami</text>
+        <text x="22" y="99" fill="#91a4c9" font-size="14">builder · learner · shipping ideas</text>
+        <text x="22" y="127" fill="#68f8d0" font-size="14">$</text><text x="42" y="127" fill="#e8efff" font-size="14">status</text>
+        <text x="112" y="127" fill="#a99cff" font-size="14">crafting the next idea</text>
+        <rect x="329" y="114" width="9" height="17" rx="1" fill="#68f8d0">
+          <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+        </rect>
+        <g fill="#91a4c9" font-size="12">
+          <text x="22" y="155">01</text><rect x="48" y="145" width="415" height="8" rx="4" fill="#162038"/>
+          <rect x="48" y="145" width="290" height="8" rx="4" fill="url(#neon)">
+            <animate attributeName="width" values="90;410;290;90" dur="7s" repeatCount="indefinite"/>
+          </rect><text x="475" y="155">always learning</text>
+        </g>
+      </g>
+    </g>
+
+    <g fill="#8da0c3"><circle cx="71" cy="69" r="2"><animate attributeName="opacity" values=".2;1;.2" dur="3s" repeatCount="indefinite"/></circle><circle cx="1095" cy="91" r="2"><animate attributeName="opacity" values="1;.2;1" dur="4s" repeatCount="indefinite"/></circle><circle cx="1110" cy="461" r="2"><animate attributeName="opacity" values=".2;1;.2" dur="5s" repeatCount="indefinite"/></circle></g>
+  </g>
+</svg>
