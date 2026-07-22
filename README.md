@@ -3,7 +3,7 @@
 
   <br />
 
-  **Learning fast. Building thoughtfully. Shipping one commit at a time.**
+  **Developer mindset. Engineer discipline. Relentless curiosity.**
 
   <a href="mailto:sarthakbhandari172@gmail.com">Email</a> ·
   <a href="https://github.com/sarthakbhandari172-blip?tab=repositories">Projects</a>
@@ -11,12 +11,12 @@
 
 ---
 
-### Current signal
+### Mission control
 
 ```text
-focus   → building a strong developer foundation
-mode    → learn · build · improve · repeat
-open    → interesting projects and collaboration
+directive → turn ideas into reliable software
+protocol  → learn · build · test · improve
+status    → online and exploring
 ```
 
 ### The toolkit

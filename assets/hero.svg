@@ -1,77 +1,85 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="520" viewBox="0 0 1180 520" role="img" aria-labelledby="title desc">
-  <title id="title">Sarthak Bhandari — developer constellation</title>
-  <desc id="desc">An animated neon developer profile banner with orbiting code nodes and a compact terminal.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" role="img" aria-labelledby="title desc">
+  <title id="title">Sarthak Bhandari — AI command interface</title>
+  <desc id="desc">A cinematic animated cyan command deck with a reactor core, diagnostics and developer identity.</desc>
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop stop-color="#050816"/><stop offset=".52" stop-color="#0a1027"/><stop offset="1" stop-color="#071a24"/>
-    </linearGradient>
-    <linearGradient id="neon" x1="0" y1="0" x2="1" y2="0">
-      <stop stop-color="#78f7d4"><animate attributeName="stop-color" values="#78f7d4;#8b7cff;#78f7d4" dur="7s" repeatCount="indefinite"/></stop>
-      <stop offset="1" stop-color="#8b7cff"><animate attributeName="stop-color" values="#8b7cff;#34d9ff;#8b7cff" dur="7s" repeatCount="indefinite"/></stop>
-    </linearGradient>
-    <radialGradient id="glow"><stop stop-color="#68f8d0" stop-opacity=".25"/><stop offset="1" stop-color="#68f8d0" stop-opacity="0"/></radialGradient>
-    <pattern id="grid" width="34" height="34" patternUnits="userSpaceOnUse"><path d="M34 0H0V34" fill="none" stroke="#a9c7ff" stroke-opacity=".055"/></pattern>
-    <filter id="blur"><feGaussianBlur stdDeviation="18"/></filter>
-    <filter id="soft"><feGaussianBlur stdDeviation="5"/></filter>
-    <clipPath id="panel"><rect x="18" y="18" width="1144" height="484" rx="30"/></clipPath>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#02050a"/><stop offset=".52" stop-color="#06111d"/><stop offset="1" stop-color="#02070c"/></linearGradient>
+    <linearGradient id="cyan" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#d7ffff"/><stop offset=".28" stop-color="#67f8ff"/><stop offset=".7" stop-color="#00a9d6"/><stop offset="1" stop-color="#056086"/></linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#4ff7ff" stop-opacity="0"/><stop offset=".45" stop-color="#4ff7ff"/><stop offset="1" stop-color="#4ff7ff" stop-opacity="0"/></linearGradient>
+    <radialGradient id="core"><stop stop-color="#fff"/><stop offset=".18" stop-color="#b8feff"/><stop offset=".48" stop-color="#1ce4f5"/><stop offset="1" stop-color="#006d95" stop-opacity="0"/></radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#65eefa" stroke-opacity=".045"/></pattern>
+    <pattern id="micro" width="5" height="5" patternUnits="userSpaceOnUse"><path d="M0 0H5" stroke="#7ffaff" stroke-opacity=".035"/></pattern>
+    <filter id="glow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="blur"><feGaussianBlur stdDeviation="30"/></filter>
+    <clipPath id="screen"><path d="M24 0H1176L1200 24V536L1176 560H24L0 536V24Z"/></clipPath>
   </defs>
 
-  <rect x="18" y="18" width="1144" height="484" rx="30" fill="url(#bg)" stroke="#7ff5d8" stroke-opacity=".22"/>
-  <g clip-path="url(#panel)">
-    <rect x="18" y="18" width="1144" height="484" fill="url(#grid)"/>
-    <circle cx="250" cy="225" r="240" fill="url(#glow)" filter="url(#blur)">
-      <animate attributeName="cx" values="220;330;220" dur="12s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="1030" cy="430" r="220" fill="#745cff" opacity=".08" filter="url(#blur)">
-      <animate attributeName="cy" values="430;330;430" dur="10s" repeatCount="indefinite"/>
-    </circle>
-    <path d="M-20 415 C260 315 360 530 660 414 S970 330 1210 430" fill="none" stroke="url(#neon)" stroke-width="2" opacity=".22">
-      <animate attributeName="d" values="M-20 415 C260 315 360 530 660 414 S970 330 1210 430;M-20 390 C230 505 430 310 690 420 S980 500 1210 390;M-20 415 C260 315 360 530 660 414 S970 330 1210 430" dur="11s" repeatCount="indefinite"/>
-    </path>
-
-    <g transform="translate(268 260)">
-      <circle r="127" fill="none" stroke="#7a91bb" stroke-opacity=".2" stroke-dasharray="3 10"/>
-      <circle r="88" fill="none" stroke="#68f8d0" stroke-opacity=".2"/>
-      <g>
-        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="18s" repeatCount="indefinite"/>
-        <circle cx="0" cy="-127" r="7" fill="#68f8d0"/><circle cx="0" cy="-127" r="18" fill="#68f8d0" opacity=".15" filter="url(#soft)"/>
-        <text x="-10" y="-145" fill="#bfffee" font-family="monospace" font-size="12">BUILD</text>
-      </g>
-      <g>
-        <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="13s" repeatCount="indefinite"/>
-        <circle cx="88" cy="0" r="6" fill="#9a8cff"/><text x="98" y="4" fill="#c9c1ff" font-family="monospace" font-size="12">SHIP</text>
-      </g>
-      <path d="M-48 20 0-58 48 20 0 62Z" fill="#09182a" stroke="url(#neon)" stroke-width="2"/>
-      <path d="m-22 12 22-36 22 36L0 42Z" fill="none" stroke="#b8fff0" stroke-opacity=".65"/>
-      <circle r="8" fill="#fff"><animate attributeName="r" values="6;10;6" dur="2.4s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;.45;1" dur="2.4s" repeatCount="indefinite"/></circle>
-    </g>
+  <path d="M24 0H1176L1200 24V536L1176 560H24L0 536V24Z" fill="url(#bg)"/>
+  <g clip-path="url(#screen)">
+    <rect width="1200" height="560" fill="url(#grid)"/>
+    <rect width="1200" height="560" fill="url(#micro)"/>
+    <ellipse cx="895" cy="280" rx="300" ry="280" fill="#00d9ff" opacity=".045" filter="url(#blur)"/>
+    <path d="M0 70H370L396 44H720" fill="none" stroke="#54eff8" stroke-opacity=".22"/>
+    <path d="M1200 480H855L828 507H480" fill="none" stroke="#54eff8" stroke-opacity=".18"/>
+    <path d="M0 510H215L239 534H390M1200 43H1055L1034 20H870" fill="none" stroke="#54eff8" stroke-opacity=".28"/>
+    <rect x="0" y="-100" width="1200" height="90" fill="url(#line)" opacity=".12">
+      <animate attributeName="y" values="-100;650" dur="5.5s" repeatCount="indefinite"/>
+    </rect>
 
     <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace">
-      <text x="462" y="105" fill="#72f6d2" font-size="14" letter-spacing="3">HELLO, WORLD — I'M</text>
-      <text x="458" y="174" fill="#f5f8ff" font-family="Inter, Arial, sans-serif" font-weight="800" font-size="58" letter-spacing="-2">SARTHAK</text>
-      <text x="462" y="214" fill="url(#neon)" font-family="Inter, Arial, sans-serif" font-weight="700" font-size="25">Curiosity → code → momentum.</text>
+      <text x="54" y="48" fill="#74f8ff" font-size="12" letter-spacing="3">SB // COMMAND DECK</text>
+      <circle cx="1125" cy="43" r="5" fill="#71ffc3" filter="url(#glow)"><animate attributeName="opacity" values="1;.35;1" dur="2s" repeatCount="indefinite"/></circle>
+      <text x="1141" y="48" fill="#8bbbc6" font-size="11" text-anchor="end">SYSTEM ONLINE</text>
 
-      <g transform="translate(462 258)">
-        <rect width="625" height="174" rx="16" fill="#040712" fill-opacity=".86" stroke="#91a4c9" stroke-opacity=".22"/>
-        <circle cx="21" cy="20" r="5" fill="#ff6b7a"/><circle cx="39" cy="20" r="5" fill="#ffd166"/><circle cx="57" cy="20" r="5" fill="#67e8a5"/>
-        <text x="82" y="25" fill="#70809f" font-size="12">sarthak@github: ~/next</text>
-        <path d="M18 41H607" stroke="#91a4c9" stroke-opacity=".13"/>
-        <text x="22" y="72" fill="#68f8d0" font-size="14">$</text><text x="42" y="72" fill="#e8efff" font-size="14">whoami</text>
-        <text x="22" y="99" fill="#91a4c9" font-size="14">builder · learner · shipping ideas</text>
-        <text x="22" y="127" fill="#68f8d0" font-size="14">$</text><text x="42" y="127" fill="#e8efff" font-size="14">status</text>
-        <text x="112" y="127" fill="#a99cff" font-size="14">crafting the next idea</text>
-        <rect x="329" y="114" width="9" height="17" rx="1" fill="#68f8d0">
-          <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
-        </rect>
-        <g fill="#91a4c9" font-size="12">
-          <text x="22" y="155">01</text><rect x="48" y="145" width="415" height="8" rx="4" fill="#162038"/>
-          <rect x="48" y="145" width="290" height="8" rx="4" fill="url(#neon)">
-            <animate attributeName="width" values="90;410;290;90" dur="7s" repeatCount="indefinite"/>
-          </rect><text x="475" y="155">always learning</text>
+      <text x="58" y="145" fill="#72f7ff" font-size="13" letter-spacing="5">DEVELOPER // SYSTEMS THINKER</text>
+      <text x="54" y="225" fill="#f0fbff" font-family="Arial, Helvetica, sans-serif" font-size="70" font-weight="800" letter-spacing="-2">SARTHAK</text>
+      <text x="58" y="270" fill="url(#cyan)" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" letter-spacing="1">BUILDING INTELLIGENT THINGS THAT WORK.</text>
+      <path d="M58 296H562" stroke="url(#line)" stroke-width="2"/>
+
+      <g transform="translate(58 326)">
+        <path d="M0 0H500L514 14V128H0Z" fill="#020810" fill-opacity=".68" stroke="#5aeef8" stroke-opacity=".22"/>
+        <path d="M0 0H130" stroke="#67f8ff" stroke-width="2"/>
+        <text x="18" y="29" fill="#588794" font-size="11" letter-spacing="2">ACTIVE DIRECTIVE</text>
+        <text x="18" y="58" fill="#d9fbff" font-size="15">learn(); build(); iterate();</text>
+        <text x="18" y="91" fill="#588794" font-size="11" letter-spacing="2">CURRENT MODE</text>
+        <text x="18" y="116" fill="#70f8ff" font-size="14">CRAFTING THE NEXT IDEA</text>
+        <rect x="236" y="104" width="9" height="15" fill="#70f8ff"><animate attributeName="opacity" values="1;0;1" dur=".9s" repeatCount="indefinite"/></rect>
+        <g transform="translate(330 24)">
+          <text y="0" fill="#588794" font-size="10">FOCUS</text><rect y="11" width="146" height="5" fill="#102c36"/><rect y="11" width="119" height="5" fill="#43eaf4"><animate attributeName="width" values="70;136;119;70" dur="6s" repeatCount="indefinite"/></rect>
+          <text y="39" fill="#588794" font-size="10">CURIOSITY</text><rect y="50" width="146" height="5" fill="#102c36"/><rect y="50" width="137" height="5" fill="#43eaf4"/>
+          <text y="78" fill="#588794" font-size="10">UPTIME</text><text x="146" y="78" fill="#d8fbff" font-size="11" text-anchor="end">∞</text>
         </g>
       </g>
+      <text x="58" y="502" fill="#446f7b" font-size="10" letter-spacing="2">PROFILE CORE / 172-BLIP</text>
     </g>
 
-    <g fill="#8da0c3"><circle cx="71" cy="69" r="2"><animate attributeName="opacity" values=".2;1;.2" dur="3s" repeatCount="indefinite"/></circle><circle cx="1095" cy="91" r="2"><animate attributeName="opacity" values="1;.2;1" dur="4s" repeatCount="indefinite"/></circle><circle cx="1110" cy="461" r="2"><animate attributeName="opacity" values=".2;1;.2" dur="5s" repeatCount="indefinite"/></circle></g>
+    <g transform="translate(890 282)">
+      <circle r="205" fill="none" stroke="#3feaf5" stroke-opacity=".08"/>
+      <circle r="189" fill="none" stroke="#67f8ff" stroke-opacity=".22" stroke-width="2" stroke-dasharray="2 15">
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="35s" repeatCount="indefinite"/>
+      </circle>
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="22s" repeatCount="indefinite"/>
+        <circle r="163" fill="none" stroke="#60f5ff" stroke-opacity=".3" stroke-width="4" stroke-dasharray="80 25 16 35"/>
+        <path d="M0-176V-151M0 176V151M-176 0H-151M176 0H151" stroke="#8afaff" stroke-width="2"/>
+      </g>
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="13s" repeatCount="indefinite"/>
+        <circle r="130" fill="none" stroke="#7cfaff" stroke-opacity=".42" stroke-width="2" stroke-dasharray="9 7"/>
+        <circle cx="0" cy="-130" r="5" fill="#dcffff" filter="url(#glow)"/>
+      </g>
+      <circle r="104" fill="#02131c" stroke="#65f6ff" stroke-width="2" stroke-opacity=".65"/>
+      <path d="M0-87 75-43 75 43 0 87-75 43-75-43Z" fill="none" stroke="#72f8ff" stroke-width="3" filter="url(#glow)"/>
+      <path d="M0-63 55-32 55 32 0 63-55 32-55-32Z" fill="#0b4053" fill-opacity=".5" stroke="#c6feff" stroke-width="2"/>
+      <circle r="43" fill="url(#core)" opacity=".95" filter="url(#glow)">
+        <animate attributeName="r" values="39;46;39" dur="2.8s" repeatCount="indefinite"/>
+      </circle>
+      <circle r="17" fill="#fff"/>
+      <g fill="#73f8ff" font-family="monospace" font-size="10" letter-spacing="2">
+        <text x="-205" y="-115">CORE 100%</text><text x="130" y="-115">SYNC</text><text x="142" y="126">STABLE</text>
+      </g>
+      <path d="M-202-101H-126M127-101H196M139 110H202" stroke="#66f5ff" stroke-opacity=".45"/>
+    </g>
   </g>
+  <path d="M24 1H1176L1199 24V536L1176 559H24L1 536V24Z" fill="none" stroke="#68f7ff" stroke-opacity=".38"/>
+  <path d="M1 94V24L24 1H105M1199 466V536L1176 559H1095" fill="none" stroke="#9cfbff" stroke-width="2"/>
 </svg>
